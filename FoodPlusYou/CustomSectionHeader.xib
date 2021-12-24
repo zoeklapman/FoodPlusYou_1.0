@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomSectionHeader" customModule="Design" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z7u-Mj-XKn">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3f-Qb-rJi">
+                            <rect key="frame" x="16" y="36" width="287" height="29"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <color key="textColor" name="TextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHf-q2-FqG">
+                            <rect key="frame" x="266" y="35" width="41" height="29"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="plus.circle.fill" catalog="system"/>
+                            <connections>
+                                <action selector="addItem:" destination="-1" eventType="touchUpInside" id="uip-uQ-DL9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="BackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="s3f-Qb-rJi" firstAttribute="leading" secondItem="z7u-Mj-XKn" secondAttribute="leading" constant="16" id="3mC-tW-vFK"/>
+                        <constraint firstItem="SHf-q2-FqG" firstAttribute="centerY" secondItem="z7u-Mj-XKn" secondAttribute="centerY" id="9GI-7d-RgO"/>
+                        <constraint firstItem="s3f-Qb-rJi" firstAttribute="centerY" secondItem="z7u-Mj-XKn" secondAttribute="centerY" id="DTM-aK-C6k"/>
+                        <constraint firstAttribute="trailing" secondItem="SHf-q2-FqG" secondAttribute="trailing" constant="8" id="qyJ-co-Ony"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="z7u-Mj-XKn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9bI-Kb-P1t"/>
+                <constraint firstItem="z7u-Mj-XKn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ldp-7s-kbI"/>
+                <constraint firstItem="z7u-Mj-XKn" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="eln-sy-l7C"/>
+                <constraint firstAttribute="bottom" secondItem="z7u-Mj-XKn" secondAttribute="bottom" id="yWI-qw-TiY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLabel" destination="s3f-Qb-rJi" id="QKW-Jc-J6l"/>
+            </connections>
+            <point key="canvasLocation" x="122" y="25"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="BackgroundColor">
+            <color red="0.81012946370000005" green="0.85953992609999996" blue="0.66402178999999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="0.42288935179999998" green="0.34503430130000001" blue="0.2961629033" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
